@@ -1,0 +1,22 @@
+[book]
+title = "Supply Chain Security in Rust"
+authors = ["Your Name"]
+description = "Evaluating Rust crates for production use"
+language = "en"
+multilingual = false
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+additional-css = ["theme/presentation.css"]
+git-repository-url = ""
+edit-url-template = ""
+
+[output.html.search]
+enable = true
+limit-results = 20

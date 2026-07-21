@@ -1,0 +1,27 @@
+name: Book checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Install mdBook
+        run: cargo install mdbook --locked
+      - name: Build book
+        run: mdbook build
+      - name: Test Rust examples
+        run: mdbook test
+      - name: Structural checks
+        run: ./scripts/check.sh
+      - name: Check demo
+        run: |
+          cargo fmt --manifest-path demo/Cargo.toml --check
+          cargo check --manifest-path demo/Cargo.toml
+          cargo clippy --manifest-path demo/Cargo.toml --all-targets -- -D warnings
