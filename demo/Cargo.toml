@@ -3,7 +3,11 @@ name = "supply-chain-demo"
 version = "0.1.0"
 edition = "2024"
 publish = false
+license = "MIT"
 
 [dependencies]
 # Add the selected demonstration dependencies only after the worked example
 # has been chosen and documented.
+
+# https://rustsec.org/advisories/RUSTSEC-2026-0103.html
+thin-vec = { version = "=0.2.15", features = ["serde"] }
