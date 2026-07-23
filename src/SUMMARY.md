@@ -25,8 +25,8 @@
 # Tool-assisted checks
 
 - [cargo tree](04-tools/01-cargo-tree.md)
-- [cargo audit](04-tools/02-cargo-audit.md)
-- [cargo deny](04-tools/03-cargo-deny.md)
+- [cargo deny](04-tools/02-cargo-deny.md)
+- [cargo vet](04-tools/03-cargo-vet.md)
 - [Other useful tools](04-tools/04-other-tools.md)
 
 # Production practice

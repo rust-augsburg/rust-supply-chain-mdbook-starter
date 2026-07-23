@@ -4,10 +4,19 @@ version = "0.1.0"
 edition = "2024"
 publish = false
 license = "MIT"
+authors = ["Julian Dickert <julian@systemscape.de"]
 
 [dependencies]
-# Add the selected demonstration dependencies only after the worked example
-# has been chosen and documented.
 
 # https://rustsec.org/advisories/RUSTSEC-2026-0103.html
-thin-vec = { version = "=0.2.15", features = ["serde"] }
+thin-vec = { version = "=0.2.15", features = ["serde"], default-features = false }
+
+# Replace the dependency with these to check the different outputs of the `cargo tree` command
+#thin-vec = { version = "=0.2.15", default-features = false }
+#thin-vec = { version = "=0.2.15" }
+
+# This is a newer version with a fix for RUSTSEC-2026-0103
+#thin-vec = { version = "0.2.18", features = ["serde"], default-features = false }
+
+# Enabling this produces an ambiguity when running `cargo tree -i serde`
+# serde = { version = "=0.9.15", default-features = false }
