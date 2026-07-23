@@ -11,5 +11,4 @@ fn main() {
     vec.push(2014u32);
 
     println!("ThinVec contents {vec:?}");
-    
 }

@@ -15,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: dtolnay/rust-toolchain@stable
       - name: Install mdBook
         uses: dtolnay/install@mdbook
       - name: Build book
@@ -24,6 +23,7 @@ jobs:
         run: mdbook test
       - name: Structural checks
         run: ./scripts/check.sh
+      - uses: dtolnay/rust-toolchain@stable
       - name: Check demo
         run: |
           cargo fmt --manifest-path demo/Cargo.toml --check
