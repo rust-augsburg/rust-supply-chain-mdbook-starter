@@ -12,7 +12,7 @@ create-missing = false
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "navy"
-additional-css = ["theme/presentation.css"]
+#additional-css = ["theme/presentation.css"]
 git-repository-url = ""
 edit-url-template = ""
 
