@@ -3,7 +3,6 @@ title = "Supply Chain Security in Rust"
 authors = ["Your Name"]
 description = "Evaluating Rust crates for production use"
 language = "en"
-multilingual = false
 src = "src"
 
 [build]
