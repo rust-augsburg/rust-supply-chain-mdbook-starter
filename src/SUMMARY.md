@@ -6,11 +6,7 @@
 
 - [Why supply-chain security?](01-context/01-why.md)
 - [The dependency graph is the product](01-context/02-dependency-graph.md)
-
-# Threat model
-
-- [What can go wrong?](02-threats/01-threat-model.md)
-- [Vulnerability, compromise, and abandonment](02-threats/02-failure-modes.md)
+- [What can go wrong?](01-context/03-threats.md)
 
 # Evaluating a crate
 
