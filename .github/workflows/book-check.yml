@@ -16,10 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: dtolnay/rust-toolchain@stable
-      - name: Install mdBook
-        uses: dtolnay/install@mdbook
-      - name: Install mdbook-admonish
-        run: cargo install mdbook-admonish --version 1.20.0 --locked
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: rust,mdbook-admonish,mdbook
       - name: Build book
         run: mdbook build
       - name: Test Rust examples
