@@ -18,3 +18,7 @@ Questions:
 
 The graph describes what is included. Evidence helps establish what is known
 about it.
+
+> [!IMPORTANT]
+> Cargo features are additive, so check with `cargo tree --edges features`
+
