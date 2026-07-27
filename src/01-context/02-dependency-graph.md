@@ -1,4 +1,6 @@
-# The dependency graph is the product
+# One dependency seldom comes alone
+
+Instead of only the depenceny we added, e.g., by running `cargo add A`, we usually get a couple of more sub-dependencies (aka. "transitive" dependencies).
 
 ```text
 Application
@@ -8,24 +10,34 @@ Application
 └── direct dependency D
     └── transitive dependency E
 ```
-
+```admonish note
 Reviewing only direct dependencies leaves most of the trust graph unexamined.
+```
 
-Key distinctions:
+## Rust Peculiarities
 
-- direct versus transitive;
-- normal, build, and development dependencies;
-- default versus optional features;
-- host code versus target code.
+In Rust, we must distinguish several types of dependencies:
 
-## Speaker Notes
+- direct versus transitive
+- normal, build, and development dependencies
+- default versus optional features (and their dependencies)
 
-Explain why build dependencies matter: build scripts and procedural macros run
-on the build host.
+```admonish caution
+Build scripts (`build.rs`) are executed **at build time on the developer's machine** and can read from and write to the file system.
 
-Use `cargo tree --edges all` during the demo if the output remains readable.
+You see how this could backfire...
+```
 
-## Transition
+## General Advice
 
-Once the full graph is visible, we can define what kinds of failure we are
-trying to prevent or contain.
+Keep the number of dependencies and enabled features to a minimum.
+
+Following this advice will give you:
+
+- faster build time
+- smaller binaries
+- smaller `target` folders
+- smaller attack surface
+- less maintenance (updating dependencies, reviewing security advisories, ...)
+- less trouble with licenses
+- fewer bugs (not every crate is perfect!)

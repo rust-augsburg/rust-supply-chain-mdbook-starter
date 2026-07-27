@@ -1,30 +1,6 @@
-# Demo project
+# `cargo vet`: auditing your supply chain
 
-This deliberately minimal Cargo application is the base for the live
-dependency evaluation.
-
-## Overview of Dependencies
-
-Use `cargo tree` to print the dependency tree.
-
-```bash
-cargo tree
-cargo tree --edges all
-cargo tree --duplicates
-```
-
-## Scanning for Vulnerabilities
-
-Use `cargo deny` to scan for vulnerabilities and check licenses.
-
-```bash
-cargo deny init
-cargo deny check
-```
-
-## Cargo Vet Example
-
-Use `cargo vet` to review and certify dependencies.
+> **Documentation:** <https://mozilla.github.io/cargo-vet/index.html>
 
 ```bash
 # Initialize cargo vet
@@ -34,6 +10,7 @@ cargo vet init
 In the `supply-chain` folder, check the config.toml.
 All dependencies are listed as "exemptions" there, so the next run of `cargo vet` will pass.
 
+## Importing External Audits
 To reduce the number of necessary exemptions, import the reviews of trusted sources like Mozilla, Google and ariel-os.
 Add the following to the `config.toml` file:
 
@@ -47,6 +24,8 @@ url = "https://raw.githubusercontent.com/google/supply-chain/main/audits.toml"
 [imports.mozilla]
 url = "https://raw.githubusercontent.com/mozilla/supply-chain/main/audits.toml"
 ```
+
+## Performing Reviews
 
 Chances are, we still have some unreviewed changes (e.g. patch changes) compared to the imported reviews.
 

@@ -1,7 +1,8 @@
 # Why supply-chain security?
 
-Most applications execute far more third-party code than code written by the
-application team.
+There is barely any modern software that does not depend on third party code.
+
+These external "dependencies" can be very powerful, but also very dangerous.
 
 A dependency can affect:
 
@@ -11,17 +12,6 @@ A dependency can affect:
 - legal obligations;
 - the ability to respond to future vulnerabilities.
 
-> A crate can be technically excellent and still be unsuitable for a specific
-> production environment.
-
-## Speaker Notes
-
-Avoid unsupported statistics. Show a dependency count from the demo project or
-a familiar internal application instead.
-
-Emphasize that this is normal software engineering, not evidence that the Rust
-ecosystem is uniquely unsafe.
-
-## Transition
-
-The first surprise is that one dependency rarely means one crate.
+```admonish caution
+With great power comes great ~responsibility~ risk.
+```

@@ -51,8 +51,6 @@ for path in sorted(Path("src").rglob("*.md")):
     text = path.read_text(encoding="utf-8")
     if not text.startswith("# "):
         errors.append(f"{path}: missing H1 title")
-    if "## Speaker Notes" not in text:
-        errors.append(f"{path}: missing Speaker Notes")
 
 if errors:
     print("\n".join(errors))

@@ -56,5 +56,5 @@ updates.
 ## Demo rule
 
 The live demo must have a rehearsed fallback consisting of captured command
-output in `src/04-tools/`. Never make the core learning outcome depend on
+output in `src/03-tools/`. Never make the core learning outcome depend on
 network access.

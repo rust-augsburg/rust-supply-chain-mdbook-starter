@@ -8,11 +8,13 @@ Starter project for developing a one-hour presentation and accompanying handbook
 
 - Rust and Cargo
 - mdBook
+- mdbook-admonish
 
-Install mdBook:
+Install the mdBook tools:
 
 ```bash
-cargo install mdbook --locked
+cargo install mdbook --version 0.4.48 --locked
+cargo install mdbook-admonish --version 1.20.0 --locked
 ```
 
 ## Start locally
@@ -63,7 +65,7 @@ Do not rewrite all chapters. First update TALK_PLAN.md with:
 Then continue chapter by chapter:
 
 ```text
-Develop src/03-evaluation/01-workflow.md into a concise presentation chapter.
+Develop src/02-evaluation/01-workflow.md into a concise presentation chapter.
 Follow AGENTS.md. Keep the visible section suitable for about three minutes
 of speaking and put detailed material under Speaker Notes.
 ```
@@ -82,10 +84,9 @@ of speaking and put detailed material under Speaker Notes.
 │   ├── SUMMARY.md
 │   ├── introduction.md
 │   ├── 01-context/
-│   ├── 02-threats/
-│   ├── 03-evaluation/
-│   ├── 04-tools/
-│   ├── 05-production/
+│   ├── 02-evaluation/
+│   ├── 03-tools/
+│   ├── 04-production/
 │   └── appendices/
 ├── theme/
 ├── demo/
