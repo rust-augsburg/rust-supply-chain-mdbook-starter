@@ -1,0 +1,19 @@
+.github/workflows/deploy-pages.yml
+  s_ddbed0162fa433::t_8eb00a60ff4369 1-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "ce280cdaf24576eb87221708fefd608ab1b1958b",
+  "prompts": {},
+  "sessions": {
+    "s_ddbed0162fa433": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5f81143c-c1da-4566-94a8-71cfcbdaf667",
+        "model": "unknown"
+      },
+      "human_author": "JuliDi <julian@systemscape.de>"
+    }
+  }
+}
