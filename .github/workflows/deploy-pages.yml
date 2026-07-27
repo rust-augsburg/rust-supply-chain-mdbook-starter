@@ -23,9 +23,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: dtolnay/rust-toolchain@stable
-      - name: Install mdBook
-        uses: dtolnay/install@mdbook
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: mdbook,rust
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
