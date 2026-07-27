@@ -15,9 +15,10 @@ It can check policies concerning:
 - banned or duplicate crates;
 - dependency sources.
 
-The generated configuration is a starting point. Production policy must be reviewed and tailored.
+> [!NOTE]
+> The generated configuration is a starting point. Production policy must be reviewed and tailored.
 
-For example, see https://github.com/onmcu/onmcu-rs/blob/main/deny.toml
+For example, see <https://github.com/onmcu/onmcu-rs/blob/main/deny.toml>
 
 ## Exceptions
 Sometimes there is no fix available for a vulnerability. We can acknowledge that and make cargo deny pass by adding an exception.
