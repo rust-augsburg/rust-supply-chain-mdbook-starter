@@ -1,0 +1,19 @@
+src/01-context/03-threats.md
+  s_ddbed0162fa433::t_da713e255fcb7f 1,3,5,7-9,11-12,14-15,17,19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "6ee44c907f95ccf92df6a93b80d931e1393c17db",
+  "prompts": {},
+  "sessions": {
+    "s_ddbed0162fa433": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5f81143c-c1da-4566-94a8-71cfcbdaf667",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "JuliDi <julian@systemscape.de>"
+    }
+  }
+}
