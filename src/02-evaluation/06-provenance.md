@@ -9,5 +9,6 @@ Check several independent forms of evidence:
 - license compatibility;
 - reviews or audits relevant to the exact version.
 
-Absence of a known advisory means "nothing is currently recorded," not "no
+> [!IMPORTANT]
+> Absence of a known advisory means "nothing is currently recorded," not "no
 vulnerability exists."

@@ -18,6 +18,5 @@ the concern.
 Distinguish counting unsafe usage from understanding it. A tool can identify
 where unsafe exists; it cannot establish that every invariant is correct.
 
-```admonish info
-A small crate can still import a large and unexpected dependency graph.
-```
+> [!IMPORTANT]
+> A small crate can still import a large and unexpected dependency graph.
