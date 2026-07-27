@@ -9,14 +9,5 @@ Check several independent forms of evidence:
 - license compatibility;
 - reviews or audits relevant to the exact version.
 
-Absence of a known advisory means “nothing is currently recorded,” not “no
-vulnerability exists.”
-
-## Speaker Notes
-
-Explain version specificity: a review of an old release does not automatically
-cover the current release.
-
-## Transition
-
-Finish by converting evidence and uncertainty into an actionable decision.
+Absence of a known advisory means "nothing is currently recorded," not "no
+vulnerability exists."

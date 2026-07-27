@@ -1,10 +1,10 @@
 # Why supply-chain security?
 
-There is barely any modern software that does not depend on third party code.
+There is **barely any** modern software that does not depend on third party code.
 
-These external "dependencies" can be very powerful, but also very dangerous.
+These external "dependencies" can be very **powerful**, but also immensely **dangerous.**
 
-A dependency can affect:
+**A dependency can affect:**
 
 - runtime behavior;
 - build scripts and developer machines;
@@ -12,6 +12,5 @@ A dependency can affect:
 - legal obligations;
 - the ability to respond to future vulnerabilities.
 
-```admonish caution
-With great power comes great ~responsibility~ risk.
-```
+> [!CAUTION]
+> With great power comes great ~responsibility~ risk.

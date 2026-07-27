@@ -9,8 +9,3 @@ Depending on the threat model:
 
 > Tools provide evidence and enforcement. They do not replace engineering
 > judgment.
-
-## Speaker Notes
-
-Keep this section short. Move detailed installation and configuration guidance
-to the handout or a future workshop.
