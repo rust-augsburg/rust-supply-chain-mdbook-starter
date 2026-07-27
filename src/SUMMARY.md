@@ -28,8 +28,7 @@
 # Production practice
 
 - [Policy and CI](04-production/01-policy.md)
-- [Worked evaluation](04-production/02-worked-example.md)
-- [Conclusion](04-production/03-conclusion.md)
+- [Conclusion](04-production/02-conclusion.md)
 
 # Appendices
 

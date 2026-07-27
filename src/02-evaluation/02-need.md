@@ -15,6 +15,5 @@ real maintenance and security costs.
 When the dependency is justified, evaluate the people and process behind it.
 ```
 
-```admonish example
-[2016 left-pad Package removal from npm](https://en.wikipedia.org/wiki/Npm_left-pad_incident) lead to Massive CI/build failures worldwide.
-```
+> [!IMPORTANT]
+> [2016 left-pad Package removal from npm](https://en.wikipedia.org/wiki/Npm_left-pad_incident) lead to Massive CI/build failures worldwide.
