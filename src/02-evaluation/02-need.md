@@ -11,10 +11,6 @@ Ask before researching popularity:
 Avoiding a crate is not automatically safer. The comparison is between two
 real maintenance and security costs.
 
-## Speaker Notes
-
-Use a small example such as parsing a trivial fixed format versus adopting a
-large general-purpose parser.
 
 ## Transition
 

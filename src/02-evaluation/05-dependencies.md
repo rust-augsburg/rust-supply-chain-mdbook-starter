@@ -16,12 +16,5 @@ Questions:
 - Are build dependencies justified?
 - Are sources restricted to expected registries or repositories?
 
-## Speaker Notes
-
-Demonstrate how feature selection changes the graph. Keep the terminal output
-small enough that the audience can identify one concrete finding.
-
-## Transition
-
 The graph describes what is included. Evidence helps establish what is known
 about it.

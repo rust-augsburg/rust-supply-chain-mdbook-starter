@@ -11,13 +11,4 @@
 > The output is not “secure.” The output is an explicit decision with known
 > assumptions.
 
-## Speaker Notes
-
-This is the central slide. Return to it throughout the presentation.
-
-Consider turning the seven steps into a simple diagram after the narrative is
-stable.
-
-## Transition
-
 The cheapest dependency to secure is the one you do not add.
