@@ -3,7 +3,7 @@
 > **Documentation:** <https://embarkstudios.github.io/cargo-deny/>
 
 ```bash
-cargo install cargo-deny --locked
+cargo install cargo-deny --version 0.20.2 --locked
 cargo deny init
 cargo deny check
 ```

@@ -15,17 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@stable
       - name: Install mdBook
         uses: dtolnay/install@mdbook
       - name: Install mdbook-admonish
-        uses: dtolnay/install@mdbook-admonish
+        run: cargo install mdbook-admonish --version 1.20.0 --locked
       - name: Build book
         run: mdbook build
       - name: Test Rust examples
         run: mdbook test
       - name: Structural checks
         run: ./scripts/check.sh
-      - uses: dtolnay/rust-toolchain@stable
       - name: Check demo
         run: |
           cargo fmt --manifest-path demo/Cargo.toml --check

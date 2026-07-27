@@ -13,8 +13,8 @@ Starter project for developing a one-hour presentation and accompanying handbook
 Install the mdBook tools:
 
 ```bash
-cargo install mdbook --locked
-cargo install mdbook-admonish --locked
+cargo install mdbook --version 0.4.48 --locked
+cargo install mdbook-admonish --version 1.20.0 --locked
 ```
 
 ## Start locally

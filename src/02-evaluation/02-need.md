@@ -11,7 +11,10 @@ Ask before researching popularity:
 Avoiding a crate is not automatically safer. The comparison is between two
 real maintenance and security costs.
 
-
-## Transition
-
+```admonish caution
 When the dependency is justified, evaluate the people and process behind it.
+```
+
+```admonish example
+[2016 left-pad Package removal from npm](https://en.wikipedia.org/wiki/Npm_left-pad_incident) lead to Massive CI/build failures worldwide.
+```
