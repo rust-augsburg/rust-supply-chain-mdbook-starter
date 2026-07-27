@@ -29,9 +29,3 @@
 
 - [Policy and CI](04-production/01-policy.md)
 - [Conclusion](04-production/02-conclusion.md)
-
-# Appendices
-
-- [Production checklist](appendices/checklist.md)
-- [Demo runbook](appendices/demo-runbook.md)
-- [Resources](appendices/resources.md)
