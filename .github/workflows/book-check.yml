@@ -18,8 +18,6 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
       - name: Install mdBook
         uses: dtolnay/install@mdbook
-      - name: Install mdbook-admonish
-        run: cargo install mdbook-admonish --version 1.20.0 --locked
       - name: Build book
         run: mdbook build
       - name: Test Rust examples
