@@ -18,7 +18,8 @@ These risks can coexist, and each requires different evidence.
 
 How to review the code?
 
-Adam Harvey found that among the 999 most popular crates on crates.io,
+[Adam Harvey](https://lawngno.me/blog/2024/06/10/divine-provenance.html) 2024 found that among the 999 most popular crates on crates.io,
 around 17 % contained code that did **not match the code in their code repository**.
 
 So how should we know what we get?
+

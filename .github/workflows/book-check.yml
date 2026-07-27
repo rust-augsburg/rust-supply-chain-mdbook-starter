@@ -17,6 +17,8 @@ jobs:
       - uses: actions/checkout@v7
       - name: Install mdBook
         uses: dtolnay/install@mdbook
+      - name: Install mdbook-admonish
+        uses: dtolnay/install@mdbook-admonish
       - name: Build book
         run: mdbook build
       - name: Test Rust examples

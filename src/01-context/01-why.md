@@ -12,5 +12,6 @@ A dependency can affect:
 - legal obligations;
 - the ability to respond to future vulnerabilities.
 
-> [!CAUTION]
-> With great power comes great ~respnsibility~ risk.
+```admonish caution
+With great power comes great ~responsibility~ risk.
+```

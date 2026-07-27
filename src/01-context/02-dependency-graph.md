@@ -10,8 +10,9 @@ Application
 └── direct dependency D
     └── transitive dependency E
 ```
-> [!NOTE]
-> Reviewing only direct dependencies leaves most of the trust graph unexamined.
+```admonish note
+Reviewing only direct dependencies leaves most of the trust graph unexamined.
+```
 
 ## Rust Peculiarities
 
@@ -21,10 +22,11 @@ In Rust, we must distinguish several types of dependencies:
 - normal, build, and development dependencies
 - default versus optional features (and their dependencies)
 
-> [!CAUTION]
-> Build scripts (`build.rs`) are executed **at build time on the developer's machine** and can read from and write to the file system.
-> 
-> You see how this could backfire...
+```admonish caution
+Build scripts (`build.rs`) are executed **at build time on the developer's machine** and can read from and write to the file system.
+
+You see how this could backfire...
+```
 
 ## General Advice
 

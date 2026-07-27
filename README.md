@@ -8,11 +8,13 @@ Starter project for developing a one-hour presentation and accompanying handbook
 
 - Rust and Cargo
 - mdBook
+- mdbook-admonish
 
-Install mdBook:
+Install the mdBook tools:
 
 ```bash
 cargo install mdbook --locked
+cargo install mdbook-admonish --locked
 ```
 
 ## Start locally
@@ -100,3 +102,4 @@ Each main chapter has two layers:
 2. **Speaker Notes**: explanations, examples, questions, and transitions.
 
 The generated mdBook is also the handout. Material that would overload a live slide belongs in the notes or appendices.
+    
